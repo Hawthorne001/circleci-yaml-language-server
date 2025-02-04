@@ -5,10 +5,13 @@ import (
 	"strings"
 )
 
-var CurrentLinuxImage = "ubuntu-2204:current"
+var CurrentLinuxImage = "ubuntu-2404:current"
 
 var ValidLinuxImages = []string{
 	// Ubuntu 20.04
+	"ubuntu-2004:2024.11.1",
+	"ubuntu-2004:2024.08.1",
+	"ubuntu-2004:2024.05.1",
 	"ubuntu-2004:2024.04.4",
 	"ubuntu-2004:2024.01.2",
 	"ubuntu-2004:2024.01.1",
@@ -33,6 +36,9 @@ var ValidLinuxImages = []string{
 	"ubuntu-2004:edge",
 
 	// Ubuntu 22.04
+	"ubuntu-2204:2024.11.1",
+	"ubuntu-2204:2024.08.1",
+	"ubuntu-2204:2024.05.1",
 	"ubuntu-2204:2024.04.4",
 	"ubuntu-2204:2024.01.2",
 	"ubuntu-2204:2024.01.1",
@@ -50,7 +56,15 @@ var ValidLinuxImages = []string{
 	"ubuntu-2204:current",
 	"ubuntu-2204:edge",
 
+	// Ubuntu 24.04
+	"ubuntu-2404:2024.11.1",
+	"ubuntu-2404:2024.08.1",
+	"ubuntu-2404:2024.05.1",
+	"ubuntu-2404:current",
+	"ubuntu-2404:edge",
+
 	// Android
+	"android:2024.11.1",
 	"android:2024.04.1",
 	"android:2024.01.1",
 	"android:2023.11.1",
@@ -97,6 +111,7 @@ var ValidLinuxResourceClasses = []string{
 
 var ValidWindowsImages = []string{
 	// Windows Server 2019
+	"windows-server-2019-vs2019:2024.12.1",
 	"windows-server-2019-vs2019:2024.05.1",
 	"windows-server-2019-vs2019:2024.01.1",
 	"windows-server-2019-vs2019:2023.10.1",
@@ -107,6 +122,7 @@ var ValidWindowsImages = []string{
 	"windows-server-2019-vs2019:edge",
 
 	// Windows Server 2022
+	"windows-server-2022:2024.12.1",
 	"windows-server-2022-gui:2024.04.1",
 	"windows-server-2022-gui:2024.01.1",
 	"windows-server-2022-gui:2023.11.1",
@@ -154,6 +170,8 @@ var ValidLinuxGPUResourceClasses = []string{
 var ValidWindowsGPUImages = []string{
 	"windows-server-2019-cuda:current",
 	"windows-server-2019-cuda:edge",
+	"windows-server-2022-cuda:current",
+	"windows-server-2022-cuda:edge",
 }
 
 var ValidWindowsGPUResourceClasses = []string{
